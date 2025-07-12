@@ -1,5 +1,5 @@
 @import "/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --primary-background: #f4f4f4;
@@ -35,11 +35,6 @@
 body.dark-theme {
   background-color: var(--dark-primary-background);
   color: var(--dark-text-color-dark);
-}
-
-body.dark-theme #app {
-  background-color: var(--dark-secondary-background);
-  box-shadow: 0 0 10px var(--dark-box-shadow-color);
 }
 
 body.dark-theme #header {
@@ -139,7 +134,22 @@ body {
   background-color: var(--header-footer-background);
   padding: 15px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-items li {
+  cursor: pointer;
 }
 
 #theme-toggle {
@@ -147,7 +157,6 @@ body {
   border: none;
   color: var(--secondary-background);
   font-size: 1.25rem;
-  cursor: pointer;
 }
 
 #header {
@@ -342,6 +351,7 @@ section h2 {
   color: var(--accent-color);
 }
 
+/* Responsive */
 @media (max-width: 992px) {
   .header-content h1 {
     font-size: 2em;

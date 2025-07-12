@@ -1,17 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.getElementById("theme-toggle");
+  // change theme
   const body = document.body;
-  const icon = themeToggle.querySelector("i");
+  const themeToggle = document.querySelector("#theme-toggle");
 
   themeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-theme");
 
     if (body.classList.contains("dark-theme")) {
-      icon.classList.remove("fa-moon");
-      icon.classList.add("fa-sun");
+      themeToggle.classList.remove("fa-moon");
+      themeToggle.classList.add("fa-sun");
     } else {
-      icon.classList.remove("fa-sun");
-      icon.classList.add("fa-moon");
+      themeToggle.classList.remove("fa-sun");
+      themeToggle.classList.add("fa-moon");
     }
+  });
+
+  // scroll to view
+  const projects = document.querySelector(".projects-section");
+  const contact = document.querySelector(".contact-section");
+  const projectsLink = document.querySelector("#projects-link");
+  const contactLink = document.querySelector("#contact-link");
+
+  projectsLink.addEventListener("click", () => {
+    projects.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  });
+
+  contactLink.addEventListener("click", () => {
+    contact.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
   });
 });

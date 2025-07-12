@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
@@ -11,9 +11,14 @@
     <div id="app">
       <header id="header">
         <nav class="navbar">
-          <button id="theme-toggle">
-            <i class="fa-solid fa-moon"></i>
-          </button>
+          <i class="navbar-logo fa-solid fa-code"></i>
+          <ul class="navbar-items">
+            <li id="projects-link">Projects</li>
+            <li id="contact-link">Contact</li>
+            <li>
+              <i id="theme-toggle" class="fa-solid fa-moon"></i>
+            </li>
+          </ul>
         </nav>
         <div class="header-content">
           <h1>Mina Medhat</h1>
@@ -22,7 +27,7 @@
       </header>
 
       <div id="main">
-        <section id="one" class="introduction-section">
+        <section class="introduction-section">
           <header class="major">
             <h2>Introduction</h2>
           </header>
@@ -78,7 +83,7 @@
           </ul>
         </section>
 
-        <section id="two" class="projects-section">
+        <section class="projects-section">
           <h2>Recent Projects</h2>
           <div class="projects-grid">
             <article class="project-item">
@@ -158,7 +163,7 @@
           </div>
         </section>
 
-        <section id="four" class="contact-section">
+        <section class="contact-section">
           <h2>Contact Me</h2>
           <p>
             If your organization is seeking to collaborate with me, whether for
@@ -174,11 +179,13 @@
                 </li>
                 <li>
                   <i class="fa-brands fa-whatsapp"> </i>
-                  <a href="https://wa.me/1221553661">+20 1221553661</a>
+                  <a href="https://wa.me/1221553661" target="_blank"
+                    >+20 1221553661</a
+                  >
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:mina.medhat.luka@outlook.com"
+                  <a href="mailto:mina.medhat.luka@outlook.com" target="_blank"
                     >mina.medhat.luka@outlook.com</a
                   >
                 </li>
