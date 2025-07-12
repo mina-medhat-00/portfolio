@@ -3,198 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header id="header">
-      <nav class="navbar">
-        <button id="theme-toggle">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-      </nav>
-      <div class="header-content">
-        <h1>Mina Medhat</h1>
-        <h3>Software Developer</h3>
-      </div>
-    </header>
-
-    <div id="main">
-      <section id="one" class="introduction-section">
-        <header class="major">
-          <h2>Introduction</h2>
-        </header>
-        <ul class="intro-list">
-          <li>Freelancer At Upwork</li>
-          <li>ITI Full Stack Web Developer Intern</li>
-          <li>FWD Certified Professional Web Developer</li>
-        </ul>
-        <h2>Who Am I</h2>
-        <p>
-          Full-Stack Web Developer skilled in Web Apps, Security Maintenance,
-          and Optimization. Bachelor of Computer Systems Engineering from Ain
-          Shams University.
-          <br />
-          Passion-driven about building robust web applications and fostering an
-          optimized online environment.
-        </p>
-        <h2>Technologies</h2>
-        <ul class="icons technologies-icons">
-          <li>
-            <i class="fa-brands fa-git"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-aws"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-docker"></i>
-          </li>
-          <li>
-            <i class="fa-solid fa-database"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-js"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-react"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-node"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-css3"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-linux"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-php"></i>
-          </li>
-        </ul>
-      </section>
-
-      <section id="two" class="projects-section">
-        <h2>Recent Projects</h2>
-        <div class="projects-grid">
-          <article class="project-item">
-            <img src="./src/images/social-analytics-tool.jpg" alt="project 1" />
-            <a href="https://github.com/MichaelLoka/Social-Analysis-Tool">
-              <h3>Social Media Analytics Tool</h3>
-            </a>
-            <p>
-              A tool used to show the relations and properties of people (nodes)
-              in a social network. This include community detection using
-              Louvain Algorithm with some community detection techniques
-              including conductance, modularity, NMI and community coverage. It
-              also utilized page rank for link analysis technique
-            </p>
-          </article>
-          <article class="project-item">
-            <img src="./src/images/security-package.jpg" alt="project 2" />
-            <a href="https://github.com/MichaelLoka/Security-Package">
-              <h3>Advanced Security Algorithms - Console App</h3>
-            </a>
-            <p>
-              A console app contains the implementation of the most common
-              cryptographic algorithms including Ceaser Cipher, Hill Cipher,
-              Monoalpahbetic, Auto/Repeating key Vigenere, Rail Fence, Columnar
-              and Play Fair. In addition to advanced network encryption
-              algorithms including AES, DES, Diffie Hellman, RSA, MD5 and RC4.
-            </p>
-          </article>
-          <article class="project-item">
-            <img
-              src="./src/images/flight-duration-vs-price.jpg"
-              alt="project 3"
-            />
-            <a
-              href="https://github.com/MichaelLoka/Flight-Gradient-Descent-Model"
-            >
-              <h3>Flight Gradient Descent Model</h3>
-            </a>
-            <p>
-              This is a machine learning model written in Python that predicts
-              the gradient descent of one variable according to another. The
-              Dataset contains 12 columns and 300152 rows. It describes the
-              departure time, arrival time, source city, destination city,
-              flight number, price, ... of each flight. Data visualization
-              include Horizontal Bar Chart, Pie Chart, Histograms, Box Plot,
-              Scatter Plot.
-            </p>
-          </article>
-          <article class="project-item">
-            <img src="./src/images/confustion-matrix.jpg" alt="project 4" />
-            <a href="https://github.com/MichaelLoka/Gender-Classification">
-              <h3>Gender Classification Model</h3>
-            </a>
-            <p>
-              Implementation of a Deep learning model aimed at classifying a
-              binary or multi-class dataset. Improve the model's layers to fit
-              well in the dataset and get high performance. This Model Includes
-              dataset preparation, Preprocessing , Choosing the most suitable
-              model, Training & Testing the model and Modifying the neural
-              network layers to improve efficiency.
-            </p>
-          </article>
+    <div id="app">
+      <header id="header">
+        <nav class="navbar">
+          <button id="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+        <div class="header-content">
+          <h1>Mina Medhat</h1>
+          <h3>Software Developer</h3>
         </div>
-      </section>
+      </header>
 
-      <section id="four" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>
-          If your organization is seeking to collaborate with me, whether for a
-          permanent position or freelance opportunities, don't hesitate to reach
-          out.
-        </p>
-        <div class="contact-info">
-          <div class="contact-details">
-            <ul class="labeled-icons">
-              <li>
-                <i class="fa-solid fa-home"> </i>
-                Nasr City, Cairo, Egypt
-              </li>
-              <li>
-                <i class="fa-brands fa-whatsapp"> </i>
-                <a href="https://wa.me/1221553661">+20 1221553661</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:mina.medhat.luka@outlook.com"
-                  >mina.medhat.luka@outlook.com</a
-                >
-              </li>
-            </ul>
+      <div id="main">
+        <section id="one" class="introduction-section">
+          <header class="major">
+            <h2>Introduction</h2>
+          </header>
+          <ul class="intro-list">
+            <li>Freelancer At Upwork</li>
+            <li>ITI Full Stack Web Developer Intern</li>
+            <li>FWD Certified Professional Web Developer</li>
+          </ul>
+          <h2>Who Am I</h2>
+          <p>
+            Full-Stack Web Developer skilled in Web Apps, Security Maintenance,
+            and Optimization. Bachelor of Computer Systems Engineering from Ain
+            Shams University.
+            <br />
+            Passion-driven about building robust web applications and fostering
+            an optimized online environment.
+          </p>
+          <h2>Technologies</h2>
+          <ul class="icons technologies-icons">
+            <li>
+              <i class="fa-brands fa-git"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-aws"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-docker"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-database"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-js"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-react"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-node"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linux"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-php"></i>
+            </li>
+          </ul>
+        </section>
+
+        <section id="two" class="projects-section">
+          <h2>Recent Projects</h2>
+          <div class="projects-grid">
+            <article class="project-item">
+              <img
+                src="./src/images/social-analytics-tool.jpg"
+                alt="project 1"
+              />
+              <a
+                href="https://github.com/MichaelLoka/Social-Analysis-Tool"
+                target="_blank"
+              >
+                <h3>Social Media Analytics Tool</h3>
+              </a>
+              <p>
+                A tool used to show the relations and properties of people
+                (nodes) in a social network. This include community detection
+                using Louvain Algorithm with some community detection techniques
+                including conductance, modularity, NMI and community coverage.
+                It also utilized page rank for link analysis technique
+              </p>
+            </article>
+            <article class="project-item">
+              <img src="./src/images/security-package.jpg" alt="project 2" />
+              <a
+                href="https://github.com/MichaelLoka/Security-Package"
+                target="_blank"
+              >
+                <h3>Advanced Security Algorithms - Console App</h3>
+              </a>
+              <p>
+                A console app contains the implementation of the most common
+                cryptographic algorithms including Ceaser Cipher, Hill Cipher,
+                Monoalpahbetic, Auto/Repeating key Vigenere, Rail Fence,
+                Columnar and Play Fair. In addition to advanced network
+                encryption algorithms including AES, DES, Diffie Hellman, RSA,
+                MD5 and RC4.
+              </p>
+            </article>
+            <article class="project-item">
+              <img
+                src="./src/images/flight-duration-vs-price.jpg"
+                alt="project 3"
+              />
+              <a
+                href="https://github.com/MichaelLoka/Flight-Gradient-Descent-Model"
+                target="_blank"
+              >
+                <h3>Flight Gradient Descent Model</h3>
+              </a>
+              <p>
+                This is a machine learning model written in Python that predicts
+                the gradient descent of one variable according to another. The
+                Dataset contains 12 columns and 300152 rows. It describes the
+                departure time, arrival time, source city, destination city,
+                flight number, price, ... of each flight. Data visualization
+                include Horizontal Bar Chart, Pie Chart, Histograms, Box Plot,
+                Scatter Plot.
+              </p>
+            </article>
+            <article class="project-item">
+              <img src="./src/images/confustion-matrix.jpg" alt="project 4" />
+              <a
+                href="https://github.com/MichaelLoka/Gender-Classification"
+                target="_blank"
+              >
+                <h3>Gender Classification Model</h3>
+              </a>
+              <p>
+                Implementation of a Deep learning model aimed at classifying a
+                binary or multi-class dataset. Improve the model's layers to fit
+                well in the dataset and get high performance. This Model
+                Includes dataset preparation, Preprocessing , Choosing the most
+                suitable model, Training & Testing the model and Modifying the
+                neural network layers to improve efficiency.
+              </p>
+            </article>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
 
-    <footer id="footer">
-      <div class="footer-content">
-        <ul class="icons social-icons">
-          <li>
-            <a href="https://www.linkedin.com/in/minamedhat00"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/mina-medhat-00"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:mina.medhat.luka@outlook.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
+        <section id="four" class="contact-section">
+          <h2>Contact Me</h2>
+          <p>
+            If your organization is seeking to collaborate with me, whether for
+            a permanent position or freelance opportunities, don't hesitate to
+            reach out.
+          </p>
+          <div class="contact-info">
+            <div class="contact-details">
+              <ul class="labeled-icons">
+                <li>
+                  <i class="fa-solid fa-home"> </i>
+                  Nasr City, Cairo, Egypt
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"> </i>
+                  <a href="https://wa.me/1221553661">+20 1221553661</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:mina.medhat.luka@outlook.com"
+                    >mina.medhat.luka@outlook.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </footer>
 
-    <script src="./src/main.js"></script>
+      <footer id="footer">
+        <div class="footer-content">
+          <ul class="icons social-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/minamedhat00" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/mina-medhat-00" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:mina.medhat.luka@outlook.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
