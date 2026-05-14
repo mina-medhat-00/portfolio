@@ -7,185 +7,539 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body
+    class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300"
+  >
     <div id="app">
-      <header id="header">
-        <nav class="navbar">
-          <i class="navbar-logo fa-solid fa-code"></i>
-          <ul class="navbar-items">
-            <li id="projects-link">Projects</li>
-            <li id="contact-link">Contact</li>
-            <li>
-              <i id="theme-toggle" class="fa-solid fa-moon"></i>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-content">
-          <h1>Mina Medhat</h1>
-          <h3>Software Developer</h3>
-        </div>
+      <!-- Navbar -->
+      <nav
+        class="bg-gray-800 dark:bg-black px-5 py-4 flex items-center justify-between sticky top-0 z-50 shadow-md"
+      >
+        <i class="fa-solid fa-code text-white text-2xl"></i>
+        <ul class="flex items-center gap-5 list-none">
+          <li
+            id="projects-link"
+            class="text-gray-300 hover:text-white cursor-pointer text-sm font-medium transition-colors duration-200"
+          >
+            Projects
+          </li>
+          <li
+            id="contact-link"
+            class="text-gray-300 hover:text-white cursor-pointer text-sm font-medium transition-colors duration-200"
+          >
+            Contact
+          </li>
+          <li>
+            <i
+              id="theme-toggle"
+              class="fa-solid fa-sun text-gray-300 hover:text-white text-lg cursor-pointer transition-colors duration-200"
+            ></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header -->
+      <header
+        id="header"
+        class="bg-blue-600 dark:bg-gray-950 text-white text-center py-20 px-4"
+      >
+        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight">
+          Mina Medhat
+        </h1>
+        <h3 class="mt-3 text-xl font-normal text-blue-200 dark:text-gray-400">
+          Software Developer
+        </h3>
       </header>
 
-      <div id="main">
-        <section class="introduction-section">
-          <header class="major">
-            <h2>Introduction</h2>
-          </header>
-          <ul class="intro-list">
-            <li>Freelancer At Upwork</li>
-            <li>ITI Full Stack Web Developer Intern</li>
-            <li>FWD Certified Professional Web Developer</li>
-          </ul>
-          <h2>Who Am I</h2>
-          <p>
-            Full-Stack Web Developer skilled in Web Apps, Security Maintenance,
-            and Optimization. Bachelor of Computer Systems Engineering from Ain
-            Shams University.
-            <br />
-            Passion-driven about building robust web applications and fostering
-            an optimized online environment.
+      <!-- Main -->
+      <main id="main" class="max-w-4xl mx-auto px-4 sm:px-8 py-8">
+        <!-- Professional Summary -->
+        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+          <div class="mb-6">
+            <h2
+              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+            >
+              Professional Summary
+            </h2>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+            Software Developer with more than 1 year of experience in developing
+            scalable web applications. Proficient across the entire development
+            lifecycle, from front-end interfaces using React and React Native to
+            back-end systems and RESTful APIs with Node.js and Nest.js.
+            Experienced in optimizing application performance, collaborating
+            with cross-functional teams, and delivering reliable software
+            solutions.
           </p>
-          <h2>Technologies</h2>
-          <ul class="icons technologies-icons">
-            <li>
-              <i class="fa-brands fa-git"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-aws"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-docker"></i>
-            </li>
-            <li>
-              <i class="fa-solid fa-database"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-js"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-react"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-node"></i>
-            </li>
-            <li>
+        </section>
+
+        <!-- Experience -->
+        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+          <div class="mb-10">
+            <h2
+              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+            >
+              Experience
+            </h2>
+          </div>
+
+          <div class="space-y-8">
+            <!-- Job 1: Chapter One -->
+            <div
+              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
+            >
+              <div
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+              ></div>
+              <div
+                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+              >
+                <div
+                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
+                >
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Software Engineer
+                    </h3>
+                    <p
+                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
+                    >
+                      Chapter One Inc.
+                    </p>
+                    <p
+                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      Remote · NY, United States
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                  >
+                    Aug 2025 – Present
+                  </span>
+                </div>
+                <ul
+                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
+                >
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Implemented a scalable backend infrastructure leveraging
+                      Nest.js and Prisma, managing complex data
+                      relationships.</span
+                    >
+                  </li>
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Maintained a cross-platform CRM application using React
+                      Native, ensuring consistent user experience for 100+
+                      active users across both iOS and Android platforms.</span
+                    >
+                  </li>
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Streamlined marketing operations by implementing
+                      scheduled background jobs and third-party integrations via
+                      Make.com, automating content posting and lead management
+                      workflows.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 2: ITI ICC -->
+            <div
+              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
+            >
+              <div
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+              ></div>
+              <div
+                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+              >
+                <div
+                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
+                >
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Full Stack Intern
+                    </h3>
+                    <p
+                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
+                    >
+                      ITI ICC Open-Source
+                    </p>
+                    <p
+                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      On-Site · Cairo, Egypt
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                  >
+                    Mar 2025 – Sep 2025
+                  </span>
+                </div>
+                <ul
+                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
+                >
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Built and deployed scalable web applications using
+                      Node.js, PHP Laravel, and React.</span
+                    >
+                  </li>
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Developed dynamic frontends utilizing Bootstrap and
+                      React, with emphasis on responsive UI design and
+                      implementation.</span
+                    >
+                  </li>
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Designed and managed MySQL databases for web solutions,
+                      integrating with Apache web servers and using Git for
+                      version control.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Job 3: Upwork -->
+            <div
+              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
+            >
+              <div
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+              ></div>
+              <div
+                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+              >
+                <div
+                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
+                >
+                  <div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Full Stack Developer
+                    </h3>
+                    <p
+                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
+                    >
+                      Upwork
+                    </p>
+                    <p
+                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                      Remote · Cairo, Egypt
+                    </p>
+                  </div>
+                  <span
+                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                  >
+                    Feb 2025 – Present
+                  </span>
+                </div>
+                <ul
+                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
+                >
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Built and maintained scalable and responsive web
+                      applications using the MERN stack, with robust front-end
+                      and back-end integration.</span
+                    >
+                  </li>
+                  <li class="flex gap-2.5 items-start">
+                    <span
+                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
+                      >▸</span
+                    >
+                    <span
+                      >Worked throughout the full Software Development Life
+                      Cycle for 2 projects, reducing project delivery timelines
+                      by 15% through agile methodologies and testing.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+          <div class="mb-8">
+            <h2
+              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+            >
+              Technologies
+            </h2>
+          </div>
+          <ul class="flex flex-wrap justify-center gap-7 list-none">
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
               <i class="fa-brands fa-html5"></i>
             </li>
-            <li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
               <i class="fa-brands fa-css3"></i>
             </li>
-            <li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-js"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-react"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-node"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-php"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-aws"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-docker"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-solid fa-database"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
               <i class="fa-brands fa-linux"></i>
             </li>
-            <li>
-              <i class="fa-brands fa-php"></i>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-git"></i>
             </li>
           </ul>
         </section>
 
-        <section class="projects-section">
-          <h2>Recent Projects</h2>
-          <div class="projects-grid">
-            <article class="project-item">
-              <img
-                src="./src/images/social-analytics-tool.jpg"
-                alt="project 1"
-              />
-              <a
-                href="https://github.com/MichaelLoka/Social-Analysis-Tool"
-                target="_blank"
-              >
-                <h3>Social Media Analytics Tool</h3>
-              </a>
-              <p>
-                A tool used to show the relations and properties of people
-                (nodes) in a social network. This include community detection
-                using Louvain Algorithm with some community detection techniques
-                including conductance, modularity, NMI and community coverage.
-                It also utilized page rank for link analysis technique
-              </p>
+        <!-- Projects -->
+        <section
+          class="projects-section py-12 border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="mb-8">
+            <h2
+              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+            >
+              Notable Projects
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-7">
+            <article
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            >
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Softline
+                </h3>
+                <p
+                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
+                >
+                  Softline is an all-in-one business automation platform
+                  designed to revolutionize service-based operations using React
+                  Native, Nest.js, and Prisma. I spearheaded the integration of
+                  AI-powered virtual receptionists and sales coaching via Retell
+                  AI, creating a system that autonomously captures, routes, and
+                  manages lead calls to maximize conversion rates. Beyond
+                  communication, the platform streamlines field logistics
+                  through sophisticated scheduling and dispatching tools for
+                  subcontractors, paired with real-time inventory management. By
+                  centralizing client interactions within a unified CRM, the
+                  solution enables seamless appointment management and automated
+                  workflows via Make.com, providing a robust end-to-end
+                  infrastructure for modern service businesses.
+                </p>
+              </div>
             </article>
-            <article class="project-item">
-              <img src="./src/images/security-package.jpg" alt="project 2" />
-              <a
-                href="https://github.com/MichaelLoka/Security-Package"
-                target="_blank"
-              >
-                <h3>Advanced Security Algorithms - Console App</h3>
-              </a>
-              <p>
-                A console app contains the implementation of the most common
-                cryptographic algorithms including Ceaser Cipher, Hill Cipher,
-                Monoalpahbetic, Auto/Repeating key Vigenere, Rail Fence,
-                Columnar and Play Fair. In addition to advanced network
-                encryption algorithms including AES, DES, Diffie Hellman, RSA,
-                MD5 and RC4.
-              </p>
+
+            <article
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            >
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Workflower
+                </h3>
+                <p
+                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
+                >
+                  Workflower is an intelligent LinkedIn outreach engine built
+                  with TypeScript that automates the entire lead generation
+                  lifecycle. By leveraging the Stagehand SDK and Playwright for
+                  advanced browser automation, the system handles complex
+                  session management and secure browsing via GoLogin to scale
+                  networking safely. I integrated the OpenAI API to develop a
+                  high-precision filtering system that autonomously qualifies
+                  prospects based on professional data and generates
+                  hyper-personalized messaging. This project showcases the
+                  powerful intersection of web automation and LLMs, transforming
+                  manual prospecting into a data-driven, autonomous growth
+                  machine.
+                </p>
+              </div>
             </article>
-            <article class="project-item">
-              <img
-                src="./src/images/flight-duration-vs-price.jpg"
-                alt="project 3"
-              />
-              <a
-                href="https://github.com/MichaelLoka/Flight-Gradient-Descent-Model"
-                target="_blank"
-              >
-                <h3>Flight Gradient Descent Model</h3>
-              </a>
-              <p>
-                This is a machine learning model written in Python that predicts
-                the gradient descent of one variable according to another. The
-                Dataset contains 12 columns and 300152 rows. It describes the
-                departure time, arrival time, source city, destination city,
-                flight number, price, ... of each flight. Data visualization
-                include Horizontal Bar Chart, Pie Chart, Histograms, Box Plot,
-                Scatter Plot.
-              </p>
+
+            <article
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            >
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Mock-Mate
+                </h3>
+                <p
+                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
+                >
+                  Mock-Mate is a comprehensive technical interview platform
+                  developed in a collaborative team environment using React,
+                  Laravel, and Inertia.js. The application facilitates real-time
+                  assessments through WebRTC video integration via LiveKit and a
+                  shared, collaborative coding environment with instant
+                  execution capabilities. I was responsible for architecting the
+                  robust role-based access control (RBAC) system and the complex
+                  session/queue management logic that ensures a smooth user
+                  flow. Additionally, I built an extensive analytics dashboard
+                  to provide users with deep insights into interview performance
+                  metrics and activity, bridging the gap between practice and
+                  professional readiness.
+                </p>
+              </div>
             </article>
-            <article class="project-item">
-              <img src="./src/images/confustion-matrix.jpg" alt="project 4" />
-              <a
-                href="https://github.com/MichaelLoka/Gender-Classification"
-                target="_blank"
-              >
-                <h3>Gender Classification Model</h3>
-              </a>
-              <p>
-                Implementation of a Deep learning model aimed at classifying a
-                binary or multi-class dataset. Improve the model's layers to fit
-                well in the dataset and get high performance. This Model
-                Includes dataset preparation, Preprocessing , Choosing the most
-                suitable model, Training & Testing the model and Modifying the
-                neural network layers to improve efficiency.
-              </p>
+
+            <article
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+            >
+              <div class="p-5">
+                <h3
+                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  VaniFit
+                </h3>
+                <p
+                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
+                >
+                  VaniFit is a high-performance e-commerce application that
+                  delivers a fluid, near-SPA user experience using Vanilla
+                  JavaScript and Bootstrap. Utilizing a serverless architecture
+                  with Firebase and Firestore, the platform features real-time
+                  data synchronization and secure user authentication. I
+                  implemented robust backend validation and a full-featured
+                  product management system, including dynamic inventory
+                  tracking and order history. By integrating Stripe for secure
+                  payment processing, VaniFit demonstrates the ability to build
+                  scalable, secure, and highly responsive web applications with
+                  a focus on clean code and optimized frontend performance.
+                </p>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="contact-section">
-          <h2>Contact Me</h2>
-          <p>
+        <!-- Contact -->
+        <section class="contact-section py-12">
+          <div class="mb-8">
+            <h2
+              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+            >
+              Contact Me
+            </h2>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-8">
             If your organization is seeking to collaborate with me, whether for
             a permanent position or freelance opportunities, don't hesitate to
             reach out.
           </p>
-          <div class="contact-info">
-            <div class="contact-details">
-              <ul class="labeled-icons">
-                <li>
-                  <i class="fa-solid fa-home"> </i>
-                  Nasr City, Cairo, Egypt
+          <div class="flex justify-center">
+            <div
+              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm w-full max-w-sm"
+            >
+              <ul class="space-y-4 list-none">
+                <li
+                  class="flex items-center gap-3 text-gray-700 dark:text-gray-200"
+                >
+                  <i
+                    class="fa-solid fa-home text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
+                  ></i>
+                  <span>Nasr City, Cairo, Egypt</span>
                 </li>
-                <li>
-                  <i class="fa-brands fa-whatsapp"> </i>
-                  <a href="https://wa.me/1221553661" target="_blank"
+                <li class="flex items-center gap-3">
+                  <i
+                    class="fa-brands fa-whatsapp text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
+                  ></i>
+                  <a
+                    href="https://wa.me/1221553661"
+                    target="_blank"
+                    class="text-blue-600 dark:text-blue-400 hover:underline"
                     >+20 1221553661</a
                   >
                 </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:mina.medhat.luka@outlook.com" target="_blank"
+                <li class="flex items-center gap-3">
+                  <i
+                    class="fa-solid fa-envelope text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
+                  ></i>
+                  <a
+                    href="mailto:mina.medhat.luka@outlook.com"
+                    target="_blank"
+                    class="text-blue-600 dark:text-blue-400 hover:underline"
                     >mina.medhat.luka@outlook.com</a
                   >
                 </li>
@@ -193,28 +547,42 @@
             </div>
           </div>
         </section>
-      </div>
+      </main>
 
-      <footer id="footer">
-        <div class="footer-content">
-          <ul class="icons social-icons">
-            <li>
-              <a href="https://www.linkedin.com/in/minamedhat00" target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/mina-medhat-00" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:mina.medhat.luka@outlook.com" target="_blank"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+      <!-- Footer -->
+      <footer
+        id="footer"
+        class="bg-gray-800 dark:bg-black text-white py-8 text-center"
+      >
+        <ul class="flex justify-center gap-6 list-none">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/minamedhat00"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/mina-medhat-00"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:mina.medhat.luka@outlook.com"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>

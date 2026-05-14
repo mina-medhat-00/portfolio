@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // change theme
-  const body = document.body;
+  const html = document.documentElement;
   const themeToggle = document.querySelector("#theme-toggle");
 
-  themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-theme");
+  html.classList.add("dark");
+  themeToggle.classList.remove("fa-moon");
+  themeToggle.classList.add("fa-sun");
 
-    if (body.classList.contains("dark-theme")) {
+  themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+
+    if (html.classList.contains("dark")) {
       themeToggle.classList.remove("fa-moon");
       themeToggle.classList.add("fa-sun");
     } else {
@@ -15,25 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // scroll to view
   const projects = document.querySelector(".projects-section");
   const contact = document.querySelector(".contact-section");
   const projectsLink = document.querySelector("#projects-link");
   const contactLink = document.querySelector("#contact-link");
 
   projectsLink.addEventListener("click", () => {
-    projects.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
+    projects.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   contactLink.addEventListener("click", () => {
-    contact.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
+    contact.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
