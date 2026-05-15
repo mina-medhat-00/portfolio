@@ -18,8 +18,26 @@
         <i class="fa-solid fa-code text-white text-2xl"></i>
         <ul class="flex items-center gap-5 list-none">
           <li
+            id="summary-link"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+          >
+            Summary
+          </li>
+          <li
+            id="experience-link"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+          >
+            Experience
+          </li>
+          <li
+            id="technologies-link"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+          >
+            Technologies
+          </li>
+          <li
             id="projects-link"
-            class="text-gray-300 hover:text-white cursor-pointer text-sm font-medium transition-colors duration-200"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Projects
           </li>
@@ -54,7 +72,9 @@
       <!-- Main -->
       <main id="main" class="max-w-4xl mx-auto px-4 sm:px-8 py-8">
         <!-- Professional Summary -->
-        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+        <section
+          class="summary-section py-12 border-b border-gray-200 dark:border-gray-700"
+        >
           <div class="mb-6">
             <h2
               class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
@@ -74,7 +94,9 @@
         </section>
 
         <!-- Experience -->
-        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+        <section
+          class="experience-section py-12 border-b border-gray-200 dark:border-gray-700"
+        >
           <div class="mb-10">
             <h2
               class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
@@ -301,7 +323,9 @@
         </section>
 
         <!-- Technologies -->
-        <section class="py-12 border-b border-gray-200 dark:border-gray-700">
+        <section
+          class="technologies-section py-12 border-b border-gray-200 dark:border-gray-700"
+        >
           <div class="mb-8">
             <h2
               class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
@@ -504,22 +528,25 @@
             </h2>
           </div>
           <p class="text-gray-600 dark:text-gray-300 mb-8">
-            If your organization is seeking to collaborate with me, whether for
-            a permanent position or freelance opportunities, don't hesitate to
-            reach out.
+            If you are seeking to collaborate with me, whether for a permanent
+            position or freelance opportunities, please don't hesitate to reach
+            out via the contact details below.
           </p>
           <div class="flex justify-center">
             <div
               class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm w-full max-w-sm"
             >
               <ul class="space-y-4 list-none">
-                <li
-                  class="flex items-center gap-3 text-gray-700 dark:text-gray-200"
-                >
+                <li class="flex items-center gap-3">
                   <i
-                    class="fa-solid fa-home text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
+                    class="fa-solid fa-at text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
                   ></i>
-                  <span>Nasr City, Cairo, Egypt</span>
+                  <a
+                    href="mailto:mina.medhat.luka@outlook.com"
+                    target="_blank"
+                    class="text-blue-600 dark:text-blue-400 hover:underline"
+                    >mina.medhat.luka@outlook.com</a
+                  >
                 </li>
                 <li class="flex items-center gap-3">
                   <i
@@ -530,17 +557,6 @@
                     target="_blank"
                     class="text-blue-600 dark:text-blue-400 hover:underline"
                     >+20 1221553661</a
-                  >
-                </li>
-                <li class="flex items-center gap-3">
-                  <i
-                    class="fa-solid fa-envelope text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
-                  ></i>
-                  <a
-                    href="mailto:mina.medhat.luka@outlook.com"
-                    target="_blank"
-                    class="text-blue-600 dark:text-blue-400 hover:underline"
-                    >mina.medhat.luka@outlook.com</a
                   >
                 </li>
               </ul>
@@ -571,15 +587,6 @@
               class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
             >
               <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:mina.medhat.luka@outlook.com"
-              target="_blank"
-              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
-            >
-              <i class="fa-solid fa-envelope"></i>
             </a>
           </li>
         </ul>
