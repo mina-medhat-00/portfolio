@@ -15,23 +15,24 @@
       <nav
         class="bg-gray-800 dark:bg-black px-5 py-4 flex items-center justify-between sticky top-0 z-50 shadow-md"
       >
-        <i class="fa-solid fa-code text-white text-2xl"></i>
+        <i id="menu-toggle" class="fa-solid fa-code text-white text-2xl"></i>
+
         <ul class="flex items-center gap-5 list-none">
           <li
             id="summary-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Summary
           </li>
           <li
             id="experience-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Experience
           </li>
           <li
             id="technologies-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-xs md:text-sm font-medium transition-colors duration-200"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Technologies
           </li>
@@ -43,23 +44,22 @@
           </li>
           <li
             id="contact-link"
-            class="text-gray-300 hover:text-white cursor-pointer text-sm font-medium transition-colors duration-200"
+            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Contact
           </li>
-          <li>
-            <i
-              id="theme-toggle"
-              class="fa-solid fa-sun text-gray-300 hover:text-white text-lg cursor-pointer transition-colors duration-200"
-            ></i>
-          </li>
         </ul>
+
+        <i
+          id="theme-toggle"
+          class="fa-solid fa-sun text-gray-300 hover:text-white text-lg cursor-pointer transition-colors duration-200"
+        ></i>
       </nav>
 
       <!-- Header -->
       <header
         id="header"
-        class="bg-blue-600 dark:bg-gray-950 text-white text-center py-20 px-4"
+        class="bg-blue-600 dark:bg-gray-800 text-white text-center py-20 px-4"
       >
         <h1 class="text-5xl sm:text-6xl font-bold tracking-tight">
           Mina Medhat
@@ -361,7 +361,7 @@
             <li
               class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
             >
-              <i class="fa-brands fa-php"></i>
+              <i class="fa-brands fa-postgresql"></i>
             </li>
             <li
               class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
@@ -376,17 +376,17 @@
             <li
               class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
             >
-              <i class="fa-solid fa-database"></i>
-            </li>
-            <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
-            >
               <i class="fa-brands fa-linux"></i>
             </li>
             <li
               class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-git"></i>
+            </li>
+            <li
+              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+            >
+              <i class="fa-brands fa-github"></i>
             </li>
           </ul>
         </section>
@@ -423,11 +423,7 @@
                   manages lead calls to maximize conversion rates. Beyond
                   communication, the platform streamlines field logistics
                   through sophisticated scheduling and dispatching tools for
-                  subcontractors, paired with real-time inventory management. By
-                  centralizing client interactions within a unified CRM, the
-                  solution enables seamless appointment management and automated
-                  workflows via Make.com, providing a robust end-to-end
-                  infrastructure for modern service businesses.
+                  subcontractors, paired with real-time inventory management.
                 </p>
               </div>
             </article>
@@ -452,10 +448,7 @@
                   networking safely. I integrated the OpenAI API to develop a
                   high-precision filtering system that autonomously qualifies
                   prospects based on professional data and generates
-                  hyper-personalized messaging. This project showcases the
-                  powerful intersection of web automation and LLMs, transforming
-                  manual prospecting into a data-driven, autonomous growth
-                  machine.
+                  hyper-personalized messaging.
                 </p>
               </div>
             </article>
@@ -480,10 +473,7 @@
                   execution capabilities. I was responsible for architecting the
                   robust role-based access control (RBAC) system and the complex
                   session/queue management logic that ensures a smooth user
-                  flow. Additionally, I built an extensive analytics dashboard
-                  to provide users with deep insights into interview performance
-                  metrics and activity, bridging the gap between practice and
-                  professional readiness.
+                  flow.
                 </p>
               </div>
             </article>
@@ -507,10 +497,7 @@
                   data synchronization and secure user authentication. I
                   implemented robust backend validation and a full-featured
                   product management system, including dynamic inventory
-                  tracking and order history. By integrating Stripe for secure
-                  payment processing, VaniFit demonstrates the ability to build
-                  scalable, secure, and highly responsive web applications with
-                  a focus on clean code and optimized frontend performance.
+                  tracking and order history.
                 </p>
               </div>
             </article>
