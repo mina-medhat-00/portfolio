@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,64 +7,60 @@
     <link rel="stylesheet" href="/src/style.css" />
     <title>Portfolio</title>
   </head>
-  <body
-    class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300"
-  >
+  <body class="bg-black text-apple-text">
     <div id="app">
       <!-- Navbar -->
       <nav
-        class="bg-gray-800 dark:bg-black px-5 py-4 flex items-center justify-between sticky top-0 z-50 shadow-md"
+        class="bg-apple-nav px-5 py-4 flex items-center justify-between sticky top-0 z-50"
       >
-        <i id="menu-toggle" class="fa-solid fa-code text-white text-2xl"></i>
+        <i
+          id="menu-toggle"
+          class="fa-solid fa-code text-apple-text text-2xl"
+        ></i>
 
         <ul class="flex items-center gap-5 list-none">
           <li
             id="summary-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
+            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Summary
           </li>
           <li
             id="experience-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
+            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Experience
           </li>
           <li
             id="technologies-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
+            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Technologies
           </li>
           <li
             id="projects-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
+            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Projects
           </li>
           <li
             id="contact-link"
-            class="text-gray-300 hover:text-white cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
+            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
           >
             Contact
           </li>
         </ul>
-
-        <i
-          id="theme-toggle"
-          class="fa-solid fa-sun text-gray-300 hover:text-white text-lg cursor-pointer transition-colors duration-200"
-        ></i>
       </nav>
 
       <!-- Header -->
       <header
         id="header"
-        class="bg-blue-600 dark:bg-gray-800 text-white text-center py-20 px-4"
+        class="bg-black text-apple-text text-center py-20 px-4"
       >
         <h1 class="text-5xl sm:text-6xl font-bold tracking-tight">
           Mina Medhat
         </h1>
-        <h3 class="mt-3 text-xl font-normal text-blue-200 dark:text-gray-400">
+        <h3 class="mt-3 text-xl font-normal text-apple-muted">
           Software Developer
         </h3>
       </header>
@@ -72,17 +68,15 @@
       <!-- Main -->
       <main id="main" class="max-w-4xl mx-auto px-4 sm:px-8 py-8">
         <!-- Professional Summary -->
-        <section
-          class="summary-section py-12 border-b border-gray-200 dark:border-gray-700"
-        >
+        <section class="summary-section py-12 border-b border-apple-nav">
           <div class="mb-6">
             <h2
-              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
             >
               Professional Summary
             </h2>
           </div>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p class="text-apple-body leading-relaxed">
             Software Developer with experience in developing scalable web
             applications. Proficient across the entire development lifecycle,
             from front-end interfaces using React and React Native to back-end
@@ -93,12 +87,10 @@
         </section>
 
         <!-- Experience -->
-        <section
-          class="experience-section py-12 border-b border-gray-200 dark:border-gray-700"
-        >
+        <section class="experience-section py-12 border-b border-apple-nav">
           <div class="mb-10">
             <h2
-              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
             >
               Experience
             </h2>
@@ -106,48 +98,41 @@
 
           <div class="space-y-8">
             <!-- Job 1: Chapter One -->
-            <div
-              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
-            >
+            <div class="relative pl-8 border-l-2 border-apple-blue">
               <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
               ></div>
               <div
-                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
               >
                 <div
                   class="flex flex-wrap items-start justify-between gap-3 mb-4"
                 >
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                    <h3 class="text-lg font-bold text-apple-text">
                       Software Engineer
                     </h3>
-                    <p
-                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
-                    >
+                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
                       Chapter One Inc.
                     </p>
                     <p
-                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
                     >
                       <i class="fa-solid fa-location-dot"></i>
                       Remote · NY, United States
                     </p>
                   </div>
                   <span
-                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
                   >
-                    Aug 2025 – Present
+                    Aug 2025 - Present
                   </span>
                 </div>
-                <ul
-                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
-                >
+                <ul class="space-y-2.5 text-sm text-apple-body">
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Implemented a scalable backend infrastructure leveraging
                       Nest.js and Prisma, managing complex data
@@ -155,10 +140,9 @@
                     >
                   </li>
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Maintained a cross-platform CRM application using React
                       Native, ensuring consistent user experience for 100+
@@ -166,10 +150,9 @@
                     >
                   </li>
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Streamlined marketing operations by implementing
                       scheduled background jobs and third-party integrations via
@@ -182,58 +165,50 @@
             </div>
 
             <!-- Job 2: ITI ICC -->
-            <div
-              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
-            >
+            <div class="relative pl-8 border-l-2 border-apple-blue">
               <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
               ></div>
               <div
-                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
               >
                 <div
                   class="flex flex-wrap items-start justify-between gap-3 mb-4"
                 >
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                    <h3 class="text-lg font-bold text-apple-text">
                       Full Stack Intern
                     </h3>
-                    <p
-                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
-                    >
+                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
                       ITI ICC Open-Source
                     </p>
                     <p
-                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
                     >
                       <i class="fa-solid fa-location-dot"></i>
                       On-Site · Cairo, Egypt
                     </p>
                   </div>
                   <span
-                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
                   >
-                    Mar 2025 – Sep 2025
+                    Mar 2025 - Sep 2025
                   </span>
                 </div>
-                <ul
-                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
-                >
+                <ul class="space-y-2.5 text-sm text-apple-body">
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Built and deployed scalable web applications using
                       Node.js, PHP Laravel, and React.</span
                     >
                   </li>
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Developed dynamic frontends utilizing Bootstrap and
                       React, with emphasis on responsive UI design and
@@ -241,10 +216,9 @@
                     >
                   </li>
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Designed and managed MySQL databases for web solutions,
                       integrating with Apache web servers and using Git for
@@ -256,48 +230,41 @@
             </div>
 
             <!-- Job 3: Upwork -->
-            <div
-              class="relative pl-8 border-l-2 border-blue-500 dark:border-blue-400"
-            >
+            <div class="relative pl-8 border-l-2 border-apple-blue">
               <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-blue-500 dark:bg-blue-400 ring-4 ring-gray-100 dark:ring-gray-900"
+                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
               ></div>
               <div
-                class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow duration-300"
+                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
               >
                 <div
                   class="flex flex-wrap items-start justify-between gap-3 mb-4"
                 >
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                    <h3 class="text-lg font-bold text-apple-text">
                       Full Stack Developer
                     </h3>
-                    <p
-                      class="text-blue-600 dark:text-blue-400 font-semibold text-sm mt-0.5"
-                    >
+                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
                       Upwork
                     </p>
                     <p
-                      class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 flex items-center gap-1"
+                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
                     >
                       <i class="fa-solid fa-location-dot"></i>
                       Remote · Cairo, Egypt
                     </p>
                   </div>
                   <span
-                    class="text-xs font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-700/60 px-3 py-1.5 rounded-full whitespace-nowrap"
+                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
                   >
-                    Feb 2025 – Present
+                    Feb 2025 - Present
                   </span>
                 </div>
-                <ul
-                  class="space-y-2.5 text-sm text-gray-600 dark:text-gray-300"
-                >
+                <ul class="space-y-2.5 text-sm text-apple-body">
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Built and maintained scalable and responsive web
                       applications using the MERN stack, with robust front-end
@@ -305,10 +272,9 @@
                     >
                   </li>
                   <li class="flex gap-2.5 items-start">
-                    <span
-                      class="text-blue-500 dark:text-blue-400 font-bold mt-0.5 shrink-0"
-                      >▸</span
-                    >
+                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                      ><i class="fa-solid fa-caret-right"></i
+                    ></span>
                     <span
                       >Worked throughout the full Software Development Life
                       Cycle for 2 projects, reducing project delivery timelines
@@ -322,69 +288,67 @@
         </section>
 
         <!-- Technologies -->
-        <section
-          class="technologies-section py-12 border-b border-gray-200 dark:border-gray-700"
-        >
+        <section class="technologies-section py-12 border-b border-apple-nav">
           <div class="mb-8">
             <h2
-              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
             >
               Technologies
             </h2>
           </div>
           <ul class="flex flex-wrap justify-center gap-7 list-none">
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-html5"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-css3"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-js"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-react"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-node"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-postgresql"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-aws"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-docker"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-linux"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-git"></i>
             </li>
             <li
-              class="text-5xl text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-default"
+              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
             >
               <i class="fa-brands fa-github"></i>
             </li>
@@ -392,29 +356,23 @@
         </section>
 
         <!-- Projects -->
-        <section
-          class="projects-section py-12 border-b border-gray-200 dark:border-gray-700"
-        >
+        <section class="projects-section py-12 border-b border-apple-nav">
           <div class="mb-8">
             <h2
-              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
             >
               Notable Projects
             </h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-7">
             <article
-              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             >
               <div class="p-5">
-                <h3
-                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
-                >
+                <h3 class="text-base font-bold text-apple-text mb-2">
                   Softline
                 </h3>
-                <p
-                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                >
+                <p class="text-sm text-apple-body leading-relaxed">
                   Softline is an all-in-one business automation platform
                   designed to revolutionize service-based operations using React
                   Native, Nest.js, and Prisma. I spearheaded the integration of
@@ -429,17 +387,13 @@
             </article>
 
             <article
-              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             >
               <div class="p-5">
-                <h3
-                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
-                >
+                <h3 class="text-base font-bold text-apple-text mb-2">
                   Workflower
                 </h3>
-                <p
-                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                >
+                <p class="text-sm text-apple-body leading-relaxed">
                   Workflower is an intelligent LinkedIn outreach engine built
                   with TypeScript that automates the entire lead generation
                   lifecycle. By leveraging the Stagehand SDK and Playwright for
@@ -454,17 +408,13 @@
             </article>
 
             <article
-              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             >
               <div class="p-5">
-                <h3
-                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
-                >
+                <h3 class="text-base font-bold text-apple-text mb-2">
                   Mock-Mate
                 </h3>
-                <p
-                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                >
+                <p class="text-sm text-apple-body leading-relaxed">
                   Mock-Mate is a comprehensive technical interview platform
                   developed in a collaborative team environment using React,
                   Laravel, and Inertia.js. The application facilitates real-time
@@ -479,17 +429,13 @@
             </article>
 
             <article
-              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
             >
               <div class="p-5">
-                <h3
-                  class="text-base font-bold text-gray-900 dark:text-white mb-2"
-                >
+                <h3 class="text-base font-bold text-apple-text mb-2">
                   VaniFit
                 </h3>
-                <p
-                  class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                >
+                <p class="text-sm text-apple-body leading-relaxed">
                   VaniFit is a high-performance e-commerce application that
                   delivers a fluid, near-SPA user experience using Vanilla
                   JavaScript and Bootstrap. Utilizing a serverless architecture
@@ -508,44 +454,33 @@
         <section class="contact-section py-12">
           <div class="mb-8">
             <h2
-              class="text-2xl font-bold text-gray-800 dark:text-gray-100 pb-3 border-b-2 border-gray-300 dark:border-gray-600 inline-block"
+              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
             >
               Contact Me
             </h2>
           </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-8">
+          <p class="text-apple-body mb-8">
             If you are seeking to collaborate with me, whether for a full-time
             position or freelance opportunities, please don't hesitate to reach
             out via the contact details below.
           </p>
-          <div class="flex justify-center">
+          <div class="flex items-center justify-center">
             <div
-              class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm w-full max-w-sm"
+              class="flex flex-col items-center justify-center py-2 gap-2 bg-apple-card rounded-xl w-full max-w-sm"
             >
-              <ul class="space-y-4 list-none">
-                <li class="flex items-center gap-3">
-                  <i
-                    class="fa-solid fa-at text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
-                  ></i>
-                  <a
-                    href="mailto:mina.medhat.luka@outlook.com"
-                    target="_blank"
-                    class="text-blue-600 dark:text-blue-400 hover:underline"
-                    >mina.medhat.luka@outlook.com</a
-                  >
-                </li>
-                <li class="flex items-center gap-3">
-                  <i
-                    class="fa-brands fa-whatsapp text-blue-500 dark:text-blue-400 w-5 text-center text-lg"
-                  ></i>
-                  <a
-                    href="https://wa.me/1221553661"
-                    target="_blank"
-                    class="text-blue-600 dark:text-blue-400 hover:underline"
-                    >+20 1221553661</a
-                  >
-                </li>
-              </ul>
+              <a
+                class="text-apple-blue hover:underline"
+                href="mailto:mina.medhat.luka@outlook.com"
+                target="_blank"
+                >mina.medhat.luka@outlook.com</a
+              >
+              <div class="bg-apple-nav w-full h-0.5"></div>
+              <a
+                href="https://wa.me/1221553661"
+                target="_blank"
+                class="text-apple-blue hover:underline"
+                >+20 1221553661</a
+              >
             </div>
           </div>
         </section>
@@ -554,14 +489,14 @@
       <!-- Footer -->
       <footer
         id="footer"
-        class="bg-gray-800 dark:bg-black text-white py-8 text-center"
+        class="bg-apple-card text-apple-text py-8 text-center"
       >
         <ul class="flex justify-center gap-6 list-none">
           <li>
             <a
               href="https://www.linkedin.com/in/minamedhat00"
               target="_blank"
-              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
+              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
@@ -570,14 +505,23 @@
             <a
               href="https://github.com/mina-medhat-00"
               target="_blank"
-              class="text-gray-300 hover:text-white text-3xl transition-colors duration-200"
+              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
             >
               <i class="fa-brands fa-github"></i>
             </a>
           </li>
+          <li>
+            <a
+              href="https://upwork.com/freelancers/minamedhat00"
+              target="_blank"
+              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
+            >
+              <i class="fa-brands fa-upwork"></i>
+            </a>
+          </li>
         </ul>
         <div class="mt-4">
-          <p class="text-gray-300 text-sm">
+          <p class="text-apple-body text-sm">
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear());
