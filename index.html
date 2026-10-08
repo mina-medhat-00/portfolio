@@ -5,532 +5,441 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Portfolio</title>
+    <title>Mina Medhat · Software Developer</title>
   </head>
   <body class="bg-black text-apple-text">
-    <div id="app">
-      <!-- Navbar -->
-      <nav
-        class="bg-apple-nav px-5 py-4 flex items-center justify-between sticky top-0 z-50"
+    <nav
+      class="bg-apple-nav px-5 py-4 flex items-center justify-between md:justify-around sticky top-0 z-50"
+    >
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-code text-apple-text text-2xl"></i>
+        <h1 class="text-2xl font-bold">Mina Medhat</h1>
+      </div>
+      <ul class="flex items-center gap-5 list-none">
+        <li
+          id="summary-link"
+          class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-base font-medium transition-colors duration-200"
+        >
+          Summary
+        </li>
+        <li
+          id="experience-link"
+          class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-base font-medium transition-colors duration-200"
+        >
+          Experience
+        </li>
+        <li
+          id="stack-link"
+          class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-base font-medium transition-colors duration-200"
+        >
+          Stack
+        </li>
+        <li
+          id="projects-link"
+          class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-base font-medium transition-colors duration-200"
+        >
+          Projects
+        </li>
+        <li
+          id="contact-link"
+          class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-base font-medium transition-colors duration-200"
+        >
+          Contact
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main" class="max-w-5xl mx-auto px-4 sm:px-8 py-8">
+      <!-- Professional Summary -->
+      <section class="summary-section py-12 border-b border-apple-nav">
+        <div class="mb-6">
+          <h2 class="text-4xl font-bold text-apple-text">Summary</h2>
+        </div>
+        <p class="text-apple-body leading-relaxed">
+          Software Developer with experience in developing scalable web
+          applications. Proficient across the entire development lifecycle, from
+          front-end interfaces using React and React Native to back-end systems
+          and RESTful APIs with Node.js and Nest.js. Experienced in optimizing
+          application performance, collaborating with cross-functional teams,
+          and delivering reliable software solutions.
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="experience-section py-12 border-b border-apple-nav">
+        <div class="mb-10">
+          <h2 class="text-4xl font-bold text-apple-text">Experience</h2>
+        </div>
+
+        <div class="space-y-8">
+          <!-- Job 1 -->
+          <div
+            class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-apple-text">
+                  Software Engineer
+                </h3>
+                <p class="text-apple-blue font-semibold text-sm mt-0.5">
+                  Chapter One Inc.
+                </p>
+                <p
+                  class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  Remote · NY, United States
+                </p>
+              </div>
+              <span
+                class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
+              >
+                Aug 2025 - Present
+              </span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-apple-body">
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Implemented a scalable backend infrastructure leveraging
+                  Nest.js and Prisma, managing complex data relationships.</span
+                >
+              </li>
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Maintained a cross-platform CRM application using React
+                  Native, ensuring consistent user experience for 100+ active
+                  users across both iOS and Android platforms.</span
+                >
+              </li>
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Streamlined marketing operations by implementing scheduled
+                  background jobs and third-party integrations via Make.com,
+                  automating content posting and lead management
+                  workflows.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Job 2 -->
+          <div
+            class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-apple-text">
+                  Full Stack Intern
+                </h3>
+                <p class="text-apple-blue font-semibold text-sm mt-0.5">
+                  ITI ICC Open-Source
+                </p>
+                <p
+                  class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  On-Site · Cairo, Egypt
+                </p>
+              </div>
+              <span
+                class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
+              >
+                Mar 2025 - Sep 2025
+              </span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-apple-body">
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Built and deployed scalable web applications using Node.js,
+                  PHP Laravel, and React.</span
+                >
+              </li>
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Developed dynamic frontends utilizing Bootstrap and React,
+                  with emphasis on responsive UI design and
+                  implementation.</span
+                >
+              </li>
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Designed and managed MySQL databases for web solutions,
+                  integrating with Apache web servers and using Git for version
+                  control.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Job 3 -->
+          <div
+            class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
+          >
+            <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-apple-text">
+                  Full Stack Developer
+                </h3>
+                <p class="text-apple-blue font-semibold text-sm mt-0.5">
+                  Upwork
+                </p>
+                <p
+                  class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  Remote · Cairo, Egypt
+                </p>
+              </div>
+              <span
+                class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
+              >
+                Feb 2025 - Present
+              </span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-apple-body">
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Built and maintained scalable and responsive web applications
+                  using the MERN stack, with robust front-end and back-end
+                  integration.</span
+                >
+              </li>
+              <li class="flex gap-2.5 items-start">
+                <span class="text-apple-blue font-bold mt-0.5 shrink-0"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                <span
+                  >Worked throughout the full Software Development Life Cycle
+                  for 2 projects, reducing project delivery timelines by 15%
+                  through agile methodologies and testing.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack -->
+      <section class="stack-section py-12 border-b border-apple-nav">
+        <div class="mb-10">
+          <h2 class="text-4xl font-bold text-apple-text">Stack</h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="flex flex-col gap-3 rounded-xl border border-apple-nav bg-apple-card p-5"
+          >
+            <h3
+              class="text-sm font-semibold uppercase tracking-wide text-apple-blue"
+            >
+              Data
+            </h3>
+            <p class="text-sm leading-relaxed text-apple-body">
+              PostgreSQL, row-level security, query plans, Prisma, Drizzle, live
+              migrations
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 rounded-xl border border-apple-nav bg-apple-card p-5"
+          >
+            <h3
+              class="text-sm font-semibold uppercase tracking-wide text-apple-blue"
+            >
+              Backend
+            </h3>
+            <p class="text-sm leading-relaxed text-apple-body">
+              Node.js, TypeScript, NestJS, BullMQ, webhooks, idempotent APIs
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 rounded-xl border border-apple-nav bg-apple-card p-5"
+          >
+            <h3
+              class="text-sm font-semibold uppercase tracking-wide text-apple-blue"
+            >
+              Frontend
+            </h3>
+            <p class="text-sm leading-relaxed text-apple-body">
+              React, React Native, TypeScript, dashboards and data-heavy
+              internal tools
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-3 rounded-xl border border-apple-nav bg-apple-card p-5"
+          >
+            <h3
+              class="text-sm font-semibold uppercase tracking-wide text-apple-blue"
+            >
+              Platform
+            </h3>
+            <p class="text-sm leading-relaxed text-apple-body">
+              AWS, managed Postgres, containers, secrets management, Nx or
+              Turborepo, CI/CD, AI-augmented engineering tools
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects-section py-12 border-b border-apple-nav">
+        <div class="mb-8">
+          <h2 class="text-4xl font-bold text-apple-text">Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-7">
+          <article
+            class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+          >
+            <div class="p-5">
+              <h3 class="text-base font-bold text-apple-text mb-2">Softline</h3>
+              <p class="text-sm text-apple-body leading-relaxed">
+                Softline is an all-in-one business automation platform designed
+                to revolutionize service-based operations using React Native,
+                Nest.js, and Prisma. I spearheaded the integration of AI-powered
+                virtual receptionists and sales coaching via Retell AI, creating
+                a system that autonomously captures, routes, and manages lead
+                calls to maximize conversion rates. Beyond communication, the
+                platform streamlines field logistics through sophisticated
+                scheduling and dispatching tools for subcontractors, paired with
+                real-time inventory management.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+          >
+            <div class="p-5">
+              <h3 class="text-base font-bold text-apple-text mb-2">
+                Workflower
+              </h3>
+              <p class="text-sm text-apple-body leading-relaxed">
+                Workflower is an intelligent LinkedIn outreach engine built with
+                TypeScript that automates the entire lead generation lifecycle.
+                By leveraging the Stagehand SDK and Playwright for advanced
+                browser automation, the system handles complex session
+                management and secure browsing via GoLogin to scale networking
+                safely. I integrated the OpenAI API to develop a high-precision
+                filtering system that autonomously qualifies prospects based on
+                professional data and generates hyper-personalized messaging.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+          >
+            <div class="p-5">
+              <h3 class="text-base font-bold text-apple-text mb-2">
+                Mock-Mate
+              </h3>
+              <p class="text-sm text-apple-body leading-relaxed">
+                Mock-Mate is a comprehensive technical interview platform
+                developed in a collaborative team environment using React,
+                Laravel, and Inertia.js. The application facilitates real-time
+                assessments through WebRTC video integration via LiveKit and a
+                shared, collaborative coding environment with instant execution
+                capabilities. I was responsible for architecting the robust
+                role-based access control (RBAC) system and the complex
+                session/queue management logic that ensures a smooth user flow.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+          >
+            <div class="p-5">
+              <h3 class="text-base font-bold text-apple-text mb-2">VaniFit</h3>
+              <p class="text-sm text-apple-body leading-relaxed">
+                VaniFit is a high-performance e-commerce application that
+                delivers a fluid, near-SPA user experience using Vanilla
+                JavaScript and Bootstrap. Utilizing a serverless architecture
+                with Firebase and Firestore, the platform features real-time
+                data synchronization and secure user authentication. I
+                implemented robust backend validation and a full-featured
+                product management system, including dynamic inventory tracking
+                and order history.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="contact-section py-12 flex flex-col items-center justify-center gap-5 md:flex-row md:items-start"
       >
-        <i
-          id="menu-toggle"
-          class="fa-solid fa-code text-apple-text text-2xl"
-        ></i>
-
-        <ul class="flex items-center gap-5 list-none">
-          <li
-            id="summary-link"
-            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
-          >
-            Summary
-          </li>
-          <li
-            id="experience-link"
-            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
-          >
-            Experience
-          </li>
-          <li
-            id="technologies-link"
-            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
-          >
-            Technologies
-          </li>
-          <li
-            id="projects-link"
-            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
-          >
-            Projects
-          </li>
-          <li
-            id="contact-link"
-            class="text-apple-body hover:text-apple-text cursor-pointer hidden md:block text-sm font-medium transition-colors duration-200"
-          >
-            Contact
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Header -->
-      <header
-        id="header"
-        class="bg-black text-apple-text text-center py-20 px-4"
-      >
-        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight">
-          Mina Medhat
-        </h1>
-        <h3 class="mt-3 text-xl font-normal text-apple-muted">
-          Software Developer
-        </h3>
-      </header>
-
-      <!-- Main -->
-      <main id="main" class="max-w-4xl mx-auto px-4 sm:px-8 py-8">
-        <!-- Professional Summary -->
-        <section class="summary-section py-12 border-b border-apple-nav">
-          <div class="mb-6">
-            <h2
-              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
-            >
-              Professional Summary
-            </h2>
-          </div>
-          <p class="text-apple-body leading-relaxed">
-            Software Developer with experience in developing scalable web
-            applications. Proficient across the entire development lifecycle,
-            from front-end interfaces using React and React Native to back-end
-            systems and RESTful APIs with Node.js and Nest.js. Experienced in
-            optimizing application performance, collaborating with
-            cross-functional teams, and delivering reliable software solutions.
-          </p>
-        </section>
-
-        <!-- Experience -->
-        <section class="experience-section py-12 border-b border-apple-nav">
-          <div class="mb-10">
-            <h2
-              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
-            >
-              Experience
-            </h2>
-          </div>
-
-          <div class="space-y-8">
-            <!-- Job 1: Chapter One -->
-            <div class="relative pl-8 border-l-2 border-apple-blue">
-              <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
-              ></div>
-              <div
-                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
-              >
-                <div
-                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
-                >
-                  <div>
-                    <h3 class="text-lg font-bold text-apple-text">
-                      Software Engineer
-                    </h3>
-                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
-                      Chapter One Inc.
-                    </p>
-                    <p
-                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
-                    >
-                      <i class="fa-solid fa-location-dot"></i>
-                      Remote · NY, United States
-                    </p>
-                  </div>
-                  <span
-                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
-                  >
-                    Aug 2025 - Present
-                  </span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-apple-body">
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Implemented a scalable backend infrastructure leveraging
-                      Nest.js and Prisma, managing complex data
-                      relationships.</span
-                    >
-                  </li>
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Maintained a cross-platform CRM application using React
-                      Native, ensuring consistent user experience for 100+
-                      active users across both iOS and Android platforms.</span
-                    >
-                  </li>
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Streamlined marketing operations by implementing
-                      scheduled background jobs and third-party integrations via
-                      Make.com, automating content posting and lead management
-                      workflows.</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Job 2: ITI ICC -->
-            <div class="relative pl-8 border-l-2 border-apple-blue">
-              <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
-              ></div>
-              <div
-                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
-              >
-                <div
-                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
-                >
-                  <div>
-                    <h3 class="text-lg font-bold text-apple-text">
-                      Full Stack Intern
-                    </h3>
-                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
-                      ITI ICC Open-Source
-                    </p>
-                    <p
-                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
-                    >
-                      <i class="fa-solid fa-location-dot"></i>
-                      On-Site · Cairo, Egypt
-                    </p>
-                  </div>
-                  <span
-                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
-                  >
-                    Mar 2025 - Sep 2025
-                  </span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-apple-body">
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Built and deployed scalable web applications using
-                      Node.js, PHP Laravel, and React.</span
-                    >
-                  </li>
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Developed dynamic frontends utilizing Bootstrap and
-                      React, with emphasis on responsive UI design and
-                      implementation.</span
-                    >
-                  </li>
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Designed and managed MySQL databases for web solutions,
-                      integrating with Apache web servers and using Git for
-                      version control.</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Job 3: Upwork -->
-            <div class="relative pl-8 border-l-2 border-apple-blue">
-              <div
-                class="absolute -left-[9px] top-[6px] w-[18px] h-[18px] rounded-full bg-apple-blue ring-4 ring-black"
-              ></div>
-              <div
-                class="bg-apple-card rounded-xl p-6 shadow-sm border border-apple-nav hover:shadow-md transition-shadow duration-300"
-              >
-                <div
-                  class="flex flex-wrap items-start justify-between gap-3 mb-4"
-                >
-                  <div>
-                    <h3 class="text-lg font-bold text-apple-text">
-                      Full Stack Developer
-                    </h3>
-                    <p class="text-apple-blue font-semibold text-sm mt-0.5">
-                      Upwork
-                    </p>
-                    <p
-                      class="text-xs text-apple-muted mt-0.5 flex items-center gap-1"
-                    >
-                      <i class="fa-solid fa-location-dot"></i>
-                      Remote · Cairo, Egypt
-                    </p>
-                  </div>
-                  <span
-                    class="text-xs font-semibold text-apple-blue bg-apple-nav border border-apple-nav px-3 py-1.5 rounded-full whitespace-nowrap"
-                  >
-                    Feb 2025 - Present
-                  </span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-apple-body">
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Built and maintained scalable and responsive web
-                      applications using the MERN stack, with robust front-end
-                      and back-end integration.</span
-                    >
-                  </li>
-                  <li class="flex gap-2.5 items-start">
-                    <span class="text-apple-blue font-bold mt-0.5 shrink-0"
-                      ><i class="fa-solid fa-caret-right"></i
-                    ></span>
-                    <span
-                      >Worked throughout the full Software Development Life
-                      Cycle for 2 projects, reducing project delivery timelines
-                      by 15% through agile methodologies and testing.</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Technologies -->
-        <section class="technologies-section py-12 border-b border-apple-nav">
-          <div class="mb-8">
-            <h2
-              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
-            >
-              Technologies
-            </h2>
-          </div>
-          <ul class="flex flex-wrap justify-center gap-7 list-none">
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-html5"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-css3"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-js"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-react"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-node"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-postgresql"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-aws"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-docker"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-linux"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-git"></i>
-            </li>
-            <li
-              class="text-5xl text-apple-muted hover:text-apple-blue hover:scale-110 transition-all duration-300 cursor-default"
-            >
-              <i class="fa-brands fa-github"></i>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Projects -->
-        <section class="projects-section py-12 border-b border-apple-nav">
-          <div class="mb-8">
-            <h2
-              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
-            >
-              Notable Projects
-            </h2>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-7">
-            <article
-              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            >
-              <div class="p-5">
-                <h3 class="text-base font-bold text-apple-text mb-2">
-                  Softline
-                </h3>
-                <p class="text-sm text-apple-body leading-relaxed">
-                  Softline is an all-in-one business automation platform
-                  designed to revolutionize service-based operations using React
-                  Native, Nest.js, and Prisma. I spearheaded the integration of
-                  AI-powered virtual receptionists and sales coaching via Retell
-                  AI, creating a system that autonomously captures, routes, and
-                  manages lead calls to maximize conversion rates. Beyond
-                  communication, the platform streamlines field logistics
-                  through sophisticated scheduling and dispatching tools for
-                  subcontractors, paired with real-time inventory management.
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            >
-              <div class="p-5">
-                <h3 class="text-base font-bold text-apple-text mb-2">
-                  Workflower
-                </h3>
-                <p class="text-sm text-apple-body leading-relaxed">
-                  Workflower is an intelligent LinkedIn outreach engine built
-                  with TypeScript that automates the entire lead generation
-                  lifecycle. By leveraging the Stagehand SDK and Playwright for
-                  advanced browser automation, the system handles complex
-                  session management and secure browsing via GoLogin to scale
-                  networking safely. I integrated the OpenAI API to develop a
-                  high-precision filtering system that autonomously qualifies
-                  prospects based on professional data and generates
-                  hyper-personalized messaging.
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            >
-              <div class="p-5">
-                <h3 class="text-base font-bold text-apple-text mb-2">
-                  Mock-Mate
-                </h3>
-                <p class="text-sm text-apple-body leading-relaxed">
-                  Mock-Mate is a comprehensive technical interview platform
-                  developed in a collaborative team environment using React,
-                  Laravel, and Inertia.js. The application facilitates real-time
-                  assessments through WebRTC video integration via LiveKit and a
-                  shared, collaborative coding environment with instant
-                  execution capabilities. I was responsible for architecting the
-                  robust role-based access control (RBAC) system and the complex
-                  session/queue management logic that ensures a smooth user
-                  flow.
-                </p>
-              </div>
-            </article>
-
-            <article
-              class="bg-apple-card border border-apple-nav rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300"
-            >
-              <div class="p-5">
-                <h3 class="text-base font-bold text-apple-text mb-2">
-                  VaniFit
-                </h3>
-                <p class="text-sm text-apple-body leading-relaxed">
-                  VaniFit is a high-performance e-commerce application that
-                  delivers a fluid, near-SPA user experience using Vanilla
-                  JavaScript and Bootstrap. Utilizing a serverless architecture
-                  with Firebase and Firestore, the platform features real-time
-                  data synchronization and secure user authentication. I
-                  implemented robust backend validation and a full-featured
-                  product management system, including dynamic inventory
-                  tracking and order history.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="contact-section py-12">
-          <div class="mb-8">
-            <h2
-              class="text-2xl font-bold text-apple-text pb-3 border-b-2 border-apple-nav inline-block"
-            >
-              Contact Me
-            </h2>
-          </div>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl font-bold text-apple-text">Get in touch</h2>
           <p class="text-apple-body mb-8">
-            If you are seeking to collaborate with me, whether for a full-time
-            position or freelance opportunities, please don't hesitate to reach
-            out via the contact details below.
-          </p>
-          <div class="flex items-center justify-center">
-            <div
-              class="flex flex-col items-center justify-center py-2 gap-2 bg-apple-card rounded-xl w-full max-w-sm"
-            >
-              <a
-                class="text-apple-blue hover:underline"
-                href="mailto:mina.medhat.luka@outlook.com"
-                target="_blank"
-                >mina.medhat.luka@outlook.com</a
-              >
-              <div class="bg-apple-nav w-full h-0.5"></div>
-              <a
-                href="https://wa.me/1221553661"
-                target="_blank"
-                class="text-apple-blue hover:underline"
-                >+20 1221553661</a
-              >
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- Footer -->
-      <footer
-        id="footer"
-        class="bg-apple-card text-apple-text py-8 text-center"
-      >
-        <ul class="flex justify-center gap-6 list-none">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/minamedhat00"
-              target="_blank"
-              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/mina-medhat-00"
-              target="_blank"
-              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://upwork.com/freelancers/minamedhat00"
-              target="_blank"
-              class="text-apple-body hover:text-apple-blue text-3xl transition-colors duration-200"
-            >
-              <i class="fa-brands fa-upwork"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="mt-4">
-          <p class="text-apple-body text-sm">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            . All rights reserved.
+            Comfortable working directly with executive leadership and turning
+            business rules into systems that hold up. Fluent English,
+            remote-ready.
           </p>
         </div>
-      </footer>
-    </div>
+
+        <div
+          class="flex flex-col items-center justify-center py-2 gap-2 bg-apple-card rounded-xl w-full max-w-sm"
+        >
+          <a
+            href="https://github.com/mina-medhat-00"
+            target="_blank"
+            class="text-apple-blue hover:underline"
+            >GitHub</a
+          >
+          <div class="bg-apple-nav w-full h-0.5"></div>
+          <a
+            href="https://www.linkedin.com/in/minamedhat00"
+            target="_blank"
+            class="text-apple-blue hover:underline"
+            >LinkedIn</a
+          >
+          <div class="bg-apple-nav w-full h-0.5"></div>
+          <a
+            href="https://upwork.com/freelancers/minamedhat00"
+            target="_blank"
+            class="text-apple-blue hover:underline"
+            >Upwork</a
+          >
+          <div class="bg-apple-nav w-full h-0.5"></div>
+          <a
+            href="mailto:mina.medhat.luka@outlook.com"
+            target="_blank"
+            class="text-apple-blue hover:underline"
+            >mina.medhat.luka@outlook.com</a
+          >
+          <div class="bg-apple-nav w-full h-0.5"></div>
+          <a
+            href="https://wa.me/201221553661"
+            target="_blank"
+            class="text-apple-blue hover:underline"
+            >+20 1221553661</a
+          >
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
